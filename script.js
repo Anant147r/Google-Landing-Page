@@ -1,8 +1,10 @@
-
+var customise=document.querySelector(".customise");
+var customiseSection=document.querySelector(".customise-section");
 var moreOptions=document.querySelector(".more-options")
 var options=document.querySelector(".options");
 var recentElements=document.querySelectorAll(".recents div")
 var ellepsis=document.querySelector(".recents div .fa-ellipsis-v")
+var customiseButtons=document.querySelectorAll(".content2 .left ul li");
 function openOptionsTab(){
      moreOptions.classList.toggle("hide");
 }
@@ -57,3 +59,27 @@ document.addEventListener("click",function(event){
 //     console.log("hello");
 //     this.classList.toggle("hide");
 // })
+
+
+// Customise section
+
+customise.addEventListener("click",function(){
+    customiseSection.classList.toggle("hide");
+})
+
+
+
+customiseButtons.forEach(listItem=>{
+    var id=listItem.id;
+    listItem.addEventListener("click",()=>{
+        fun(id);
+    })})
+
+function fun(id){
+    var items=document.querySelectorAll(".right>.contents>div");
+    items.forEach(ele=>{
+        ele.classList.add("hide");
+    })
+    var selected=document.querySelector(`.right .contents .content${id}`);
+    selected.classList.remove("hide");
+}
