@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-body{
-    position:relative;
+body{   
+    /* background-image: url('img/books.jpg');
+    background-size: contain; */
 }
 img{
     max-width: 100%;
@@ -16,6 +17,9 @@ img{
     margin:20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
 a{
     text-decoration:none;
 }
@@ -122,11 +126,12 @@ div.customise{
 
 .logo{
     display:block;
-    height:200px;
+    height:auto;
     margin:0 auto;
     box-sizing: unset;
     padding-top:90px;
-    
+
+    width:350px;
     /* border:1px solid black; */
 }
 
@@ -234,6 +239,10 @@ div.customise{
     border:0.5px solid grey;
     border-radius:5px;
     
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content1>div:hover{
+    cursor:pointer;
 }
 
 .customise-section>.contents>.content2>.right>.contents>.content1{

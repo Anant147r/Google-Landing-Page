@@ -5,6 +5,13 @@ var options=document.querySelector(".options");
 var recentElements=document.querySelectorAll(".recents div")
 var ellepsis=document.querySelector(".recents div .fa-ellipsis-v")
 var customiseButtons=document.querySelectorAll(".content2 .left ul li");
+var background=document.querySelectorAll(".right>.contents>.content1>div");
+var body=document.querySelector("body");
+var currentBodyBackground=body.style.backgroundImage;
+var customiseCancelButton=document.querySelector(".cancel");
+var customiseDoneButton=document.querySelector(".done");
+
+
 function openOptionsTab(){
      moreOptions.classList.toggle("hide");
 }
@@ -83,3 +90,25 @@ function fun(id){
     var selected=document.querySelector(`.right .contents .content${id}`);
     selected.classList.remove("hide");
 }
+
+//Background
+
+background.forEach(element=>{
+    element.addEventListener("click",()=>{
+        var url=element.firstElementChild.style.backgroundImage;
+        body.style.backgroundImage=url;
+        body.style.background="contain";
+    })
+})
+
+// Customise Cancel and Save
+
+customiseCancelButton.addEventListener("click",()=>{
+    body.style.backgroundImage=currentBodyBackground;
+    customiseSection.classList.toggle("hide");
+})
+
+customiseDoneButton.addEventListener("click",()=>{
+    currentBodyBackground=body.style.backgroundImage;
+    customiseSection.classList.toggle("hide");
+})
