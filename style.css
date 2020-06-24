@@ -20,8 +20,9 @@ img{
 
 
 
-a{
+a,i{
     text-decoration:none;
+    cursor:pointer;
 }
 ul{
     list-style: none;
@@ -31,13 +32,14 @@ ul{
     display:none;
 }
 
-div.customise{
-    /* position:fixed; */
+.customise{
+    position:fixed;
     bottom:3%;
     right:2%;
     box-shadow: 1px 1px 12px -5px  black;
     padding:10px;
     border-radius:20px;
+    cursor:pointer;
 }
 
 
@@ -63,11 +65,13 @@ div.customise{
 }
 
 .profile{
+    
     margin-left:20px;
     font-size: 18px;
     padding:10px 15px;
     background-color: aquamarine;
     border-radius:50% ;
+    
 }
 .more-options{
     border-radius:10px;
@@ -79,6 +83,8 @@ div.customise{
     right:15px;
     overflow-y:scroll;
     overflow-x:hidden;
+    background-color: white;
+    z-index:2;
 }
 .more-options .contents-1{
     padding:30px 20px 25px 20px;
@@ -146,6 +152,8 @@ div.customise{
     right:2%;
     width:320px;
     padding-top:10px;
+    background-color: white;
+    z-index:2;
 }
 
 .account-section>a>i{
@@ -254,6 +262,8 @@ div.customise{
     right:1%;
 }
 
+/* Search bar */
+
 .search-bar{
     display:block;
     /* border:1px solid black; */
@@ -272,7 +282,12 @@ div.customise{
     margin-right:60px;
     font-size:17px;
     /* border:1px solid black; */
-}   
+}  
+
+.search-bar>input:focus{
+    outline:none;
+}
+
 .search-bar *{
    
     display:inline-block;
@@ -283,11 +298,12 @@ div.customise{
 /* Customise section */
 
 .customise-section{
+    background-color:white;
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    z-index:1;
+    z-index:2;
     width:800px;
 }
 
@@ -354,9 +370,25 @@ div.customise{
     flex:1;
 }
 
+.left i{
+    padding-right:10px;
+}
+
 .left li{
-    padding-bottom:20px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    margin:15px 0;
+    width:180px;
+    /* border:1px solid black; */
+    padding-top:13px;
+    padding-bottom:10px;
     padding-left:10px;
+    box-shadow:1px 1px 10px grey;
+    cursor:pointer;
+}
+
+.left li:hover{
+    box-shadow:2px 2px 10px grey;
 }
 
 .customise-section>.contents>.content2>.right>.contents>.content2{
@@ -404,14 +436,29 @@ div.customise{
     font-size:15px;
 }
 
+.cancel{
+    background-color:white !important;
+    color:black !important;
+}
+
+.content3 .btn{
+    box-shadow:1px 1px 10px grey;
+    background-color: blue;
+    border:none;
+    color: white;
+}
+
+
+
 /* Buttons */
 
 .btn{
-    border:1px solid black;
+   border:1px solid black;
     border-radius:5px;
-    padding:5px;
+    padding:10px;
     margin-right:5px;
 }
+
 
 
 
@@ -439,6 +486,9 @@ div.customise{
     .recents .nine,.recents .ten{
         display: none;
     }
+    .customise>span{
+        display:none;
+    }
     
 }
 
@@ -461,7 +511,7 @@ div.customise{
     .recents .eight,.recents .seven{
         display:none;
     }
-
+    
 
 }
 

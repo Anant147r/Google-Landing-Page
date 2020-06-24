@@ -25,6 +25,13 @@ function moreOptionsHidden(){
         return 0;
 }
 
+function accountSectionHidden(){
+    if(accountSection.classList.contains("hide"))
+        return 1;
+    else
+        return 0;
+}
+
 // Using escape with key code 13
 
 document.addEventListener("keyup",(e)=>{
@@ -51,6 +58,7 @@ document.addEventListener("click",function(event){
         {
             moreOptions.classList.add("hide");
         }
+       
     }
 })
 
@@ -128,6 +136,20 @@ customiseDoneButton.addEventListener("click",()=>{
 
 //Profile Section
 
+
+
 profile.addEventListener("click",()=>{
-    accountSection.classList.toggle("hide");
+   accountSection.classList.toggle("hide");
+   
 })
+
+
+document.addEventListener("click",(event)=>{
+    if((accountSectionHidden()===0)&&(event.target!==profile))
+    {
+    var isCLickedInside2=accountSection.contains(event.target);
+    if(!isCLickedInside2)
+    {
+        accountSection.classList.add("hide");
+    }
+}})
