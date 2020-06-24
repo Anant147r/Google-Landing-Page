@@ -10,7 +10,9 @@ var body=document.querySelector("body");
 var currentBodyBackground=body.style.backgroundImage;
 var customiseCancelButton=document.querySelector(".cancel");
 var customiseDoneButton=document.querySelector(".done");
-
+var profile=document.querySelector(".profile");
+var accountSection=document.querySelector(".account-section");
+var uploadFile=document.querySelector(".file");
 
 function openOptionsTab(){
      moreOptions.classList.toggle("hide");
@@ -91,6 +93,8 @@ function fun(id){
     selected.classList.remove("hide");
 }
 
+
+
 //Background
 
 background.forEach(element=>{
@@ -100,6 +104,15 @@ background.forEach(element=>{
         body.style.background="contain";
     })
 })
+
+//Uploading background
+
+function uploadHandler(){
+    var bg=uploadFile.files[0].name;
+    var url=`./img/${bg}`;
+    console.log(`url("${url}")`);
+    body.style.backgroundImage=`url("${url}")`
+}
 
 // Customise Cancel and Save
 
@@ -111,4 +124,10 @@ customiseCancelButton.addEventListener("click",()=>{
 customiseDoneButton.addEventListener("click",()=>{
     currentBodyBackground=body.style.backgroundImage;
     customiseSection.classList.toggle("hide");
+})
+
+//Profile Section
+
+profile.addEventListener("click",()=>{
+    accountSection.classList.toggle("hide");
 })

@@ -135,6 +135,76 @@ div.customise{
     /* border:1px solid black; */
 }
 
+/* Account Section */
+
+.account-section{
+    position:absolute;
+    border:1px solid grey;
+    border-radius:5px;
+    box-shadow:-.5px -.4px 9px grey;
+    top:15%;
+    right:2%;
+    width:320px;
+    padding-top:10px;
+}
+
+.account-section>a>i{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    height:90px;
+    padding:15px;
+    border-radius:50% 50%;
+    box-shadow:1px 1px 10px grey;
+}
+
+.account-section>h1{
+    font-size:19px;
+    text-align: center;
+}
+
+.account-section>#email{
+    text-align: center;
+}
+
+.account-section>.btn{
+    margin:20px auto;
+    text-align: center;
+    width:250px;
+    border-radius:15px;
+}
+
+.account-section>.add-account{
+    display:flex;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+    padding:15px 30px;
+    /* margin-top:10px; */
+}
+.account-section>.add-account>div{
+    flex:1;
+    padding-left:10px;
+}
+
+.account-section>a.btn{
+    border: 1px solid grey;
+    display:block;
+    width:90px;
+    margin:20 auto;
+    text-align: center;
+    border-radius:3px;
+}
+.account-section>ul{
+    border-top:1px solid grey;
+    text-align: center;
+}
+
+.account-section>ul>li{
+    display:inline-block;
+    padding:10px;
+    text-align: center;
+}
+
 /* Main Contents */
 
 .contents .recents{
@@ -231,6 +301,18 @@ div.customise{
 .customise-section> .contents>.content1{
     /* border:1px solid black; */
     padding:30px 20px 30px 200px;
+}
+
+.upload>a{
+    width:35px;
+    display:block;
+    margin:auto;
+    margin-top:60px;
+}
+
+.upload>p{
+    padding-top:20px;
+    text-align: center;
 }
 
 .customise-section>.contents>.content2>.right>.contents>.content1>div>div{

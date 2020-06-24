@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+    
+    <div class="account-section hide">
+        <a href="#"><i class="fab fa-autoprefixer fa-3x"></i></a>
+        <h1>Random</h1>
+        <div id="email">random@random.com</div>
+        <div class="btn">Manage your Google Account</div>
+        <div class="add-account"><i class="fas fa-user-plus"></i><div>Add another account</div></div>
+        <a href="#" class="btn">Sign out</a>
+        <ul>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms of Service</a>
+            </li>
+        </ul>
+    </div>
     <div class="customise">
         <i class="fas fa-pen"></i>Customise
     </div>
@@ -41,8 +57,16 @@
                     <div class="contents">
                         <div class="content1 hide">
                             <div>
-                                <div></div>
-                                <p></p>
+                                <div class="upload">
+                                    <a href="#">
+                                        <label for="file">
+                                            <i class="fas fa-upload fa-3x" ></i> 
+                                        </label>
+                                    </a>
+                                    <p>Upload from device</p>
+                                    <input type="file" id="file" class="file hide"
+                                    onchange="uploadHandler()">
+                                </div>
                             </div>
                             <div>
                                 <div></div>
