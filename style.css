@@ -1,0 +1,520 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{   
+    /* background-image: url('img/books.jpg');
+    background-size: contain; */
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    position:relative;
+    margin:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a,i{
+    text-decoration:none;
+    cursor:pointer;
+}
+ul{
+    list-style: none;
+}
+
+.hide{
+    display:none;
+}
+
+.customise{
+    position:fixed;
+    bottom:3%;
+    right:2%;
+    box-shadow: 1px 1px 12px -5px  black;
+    padding:10px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+
+
+/* Navbar */
+
+.empty{
+    height:100%;
+    width:250px;
+    
+    flex:1;
+}
+.navbar{
+    position:relative;
+    height:20px;
+    font-size:14px;
+    display:flex;
+    align-items: center;
+}
+
+.navbar *{
+    margin-left:10px;
+}
+
+.profile{
+    
+    margin-left:20px;
+    font-size: 18px;
+    padding:10px 15px;
+    background-color: aquamarine;
+    border-radius:50% ;
+    
+}
+.more-options{
+    border-radius:10px;
+    box-shadow:-5px 3px 10px -8px black,0px -3px 10px -8px black;
+    position:absolute;
+    width:350px;
+    max-height:500px;
+    top:40px;
+    right:15px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: white;
+    z-index:2;
+}
+.more-options .contents-1{
+    padding:30px 20px 25px 20px;
+    margin:0;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: .1px solid grey;
+}
+.more-options .contents-2{
+    padding:30px 20px 25px 20px;
+    margin:0;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: .1px solid grey;
+}
+.more-options .contents-1>*{
+     padding:20px 4px;
+}
+.more-options .contents-2>*{
+    padding:20px 4px;
+}
+.more-options .contents-1 div p{
+    
+    display:block;
+    width:100%;
+    max-width:fit-content;
+    margin:5px auto;
+}
+.more-options .contents-2 div p{
+    
+    display:block;
+    width:100%;
+    max-width:fit-content;
+    margin:5px auto;
+}
+
+.more-options .contents-1 div:hover{
+    background-color: rgba(52, 73, 94, .04);
+    cursor:pointer;
+}
+
+/* logo */
+
+.logo{
+    display:block;
+    height:auto;
+    margin:0 auto;
+    box-sizing: unset;
+    padding-top:90px;
+
+    width:350px;
+    /* border:1px solid black; */
+}
+
+/* Account Section */
+
+.account-section{
+    position:absolute;
+    border:1px solid grey;
+    border-radius:5px;
+    box-shadow:-.5px -.4px 9px grey;
+    top:15%;
+    right:2%;
+    width:320px;
+    padding-top:10px;
+    background-color: white;
+    z-index:2;
+}
+
+.account-section>a>i{
+    display:block;
+    margin:10px auto;
+    width:90px;
+    height:90px;
+    padding:15px;
+    border-radius:50% 50%;
+    box-shadow:1px 1px 10px grey;
+}
+
+.account-section>h1{
+    font-size:19px;
+    text-align: center;
+}
+
+.account-section>#email{
+    text-align: center;
+}
+
+.account-section>.btn{
+    margin:20px auto;
+    text-align: center;
+    width:250px;
+    border-radius:15px;
+}
+
+.account-section>.add-account{
+    display:flex;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+    padding:15px 30px;
+    /* margin-top:10px; */
+}
+.account-section>.add-account>div{
+    flex:1;
+    padding-left:10px;
+}
+
+.account-section>a.btn{
+    border: 1px solid grey;
+    display:block;
+    width:90px;
+    margin:20 auto;
+    text-align: center;
+    border-radius:3px;
+}
+.account-section>ul{
+    border-top:1px solid grey;
+    text-align: center;
+}
+
+.account-section>ul>li{
+    display:inline-block;
+    padding:10px;
+    text-align: center;
+}
+
+/* Main Contents */
+
+.contents .recents{
+    display: grid;
+    height:40%;
+    grid-template-columns: repeat(5,1fr);
+    grid-row-gap: 10px;
+    width:500px;
+    margin:0 auto;
+}
+
+/* .contents .recents div{
+    transition:top 1s ease-in-out
+} */
+
+.contents .recents div:hover{
+    cursor:pointer;
+    background-color: rgba(0,0,0,0.05);
+}
+
+.contents .recents>*{
+    position:relative;
+    display:grid;
+   
+}
+
+.contents .recents .icons{
+    display: block;
+    width:40%;
+   margin:auto auto;
+    
+}
+.contents .recents div p{
+    font-size:12px;
+    display: block;
+    margin: auto auto;
+    max-width:80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.contents .recents div .fa-ellipsis-v{
+    position:absolute;
+    top:1%;
+    right:1%;
+}
+
+/* Search bar */
+
+.search-bar{
+    display:block;
+    /* border:1px solid black; */
+    width:570px;
+    margin:20px auto;
+    padding:0 10px;
+    border-radius:50px;
+    box-shadow:1px 1px 20px -11px;
+}
+.search-bar input{
+    display:inline-block;
+    border-style: none;
+    padding:10px 100px 10px 10px;
+    width:440px;
+    max-width:90%;
+    margin-right:60px;
+    font-size:17px;
+    /* border:1px solid black; */
+}  
+
+.search-bar>input:focus{
+    outline:none;
+}
+
+.search-bar *{
+   
+    display:inline-block;
+}
+
+
+
+/* Customise section */
+
+.customise-section{
+    background-color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    width:800px;
+}
+
+.customise-section>.contents{
+   /* border:1px solid black; */
+   background:white;
+   border-radius:5px;
+   box-shadow:2px 2px 10px grey
+}
+
+.customise-section> .contents>.content1{
+    /* border:1px solid black; */
+    padding:30px 20px 30px 200px;
+}
+
+.upload>a{
+    width:35px;
+    display:block;
+    margin:auto;
+    margin-top:60px;
+}
+
+.upload>p{
+    padding-top:20px;
+    text-align: center;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content1>div>div{
+    width:180px;
+    height:180px;
+    border:0.5px solid grey;
+    border-radius:5px;
+    
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content1>div:hover{
+    cursor:pointer;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content1{
+    /* border:1px solid red; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+    max-height: 400px;
+    overflow: scroll;
+    padding-bottom:10px;
+    
+}
+
+.customise-section>.contents>.content2>div{
+    /* border:1px solid black; */
+}
+.customise-section>.contents>.content2{
+    display:grid;
+    grid-template-columns:1fr 3fr ;
+}
+
+.customise-section>.contents>.content3{
+    padding:20px;
+    display:flex;
+}
+.customise-section>.contents>.content3>div{
+    flex:1;
+}
+
+.left i{
+    padding-right:10px;
+}
+
+.left li{
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    margin:15px 0;
+    width:180px;
+    /* border:1px solid black; */
+    padding-top:13px;
+    padding-bottom:10px;
+    padding-left:10px;
+    box-shadow:1px 1px 10px grey;
+    cursor:pointer;
+}
+
+.left li:hover{
+    box-shadow:2px 2px 10px grey;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content2{
+    height:400px;
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+.customise-section>.contents>.content2>.right>.contents>.content2>.part1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.customise-section>.contents>.content2>.right>.contents>.content2>.part1>section>div{
+ width:270px;
+ height:170px;
+ border-radius:5px;
+ border:1px solid black;   
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content2>.part1>section>h1{
+    padding-top:10px;
+    font-size:15px;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content2>.part1>section>p{
+    font-size:15px;
+    padding-top:15px;
+}
+.customise-section>.contents>.content2>.right>.contents>.content2>.part2>.contents{
+    display:flex;
+    padding:15px;
+    /* padding-right:15px; */
+    border-radius:5px;
+    /* border:.5px solid grey; */
+    box-shadow:1px 1px 10px grey;
+    margin-right:10px;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content2>.part2>.contents>div{
+    flex:1;
+    padding-left:20px;
+    font-size:15px;
+}
+
+.customise-section>.contents>.content2>.right>.contents>.content2>.part2>.contents>div>h1{
+    font-size:15px;
+}
+
+.cancel{
+    background-color:white !important;
+    color:black !important;
+}
+
+.content3 .btn{
+    box-shadow:1px 1px 10px grey;
+    background-color: blue;
+    border:none;
+    color: white;
+}
+
+
+
+/* Buttons */
+
+.btn{
+   border:1px solid black;
+    border-radius:5px;
+    padding:10px;
+    margin-right:5px;
+}
+
+
+
+
+/* Media Queries */
+
+
+
+@media(max-width:680px){
+    .search-bar{
+        width:500px;  
+        /* border:1px solid black;   */
+    }
+    .search-bar input{
+        /* border:1px solid black; */
+        width:380px;    
+        padding-right:50px
+    }
+
+    .contents .recents{
+        grid-template-columns: repeat(4,1fr);
+        width:400px;
+    }
+    
+    
+    .recents .nine,.recents .ten{
+        display: none;
+    }
+    .customise>span{
+        display:none;
+    }
+    
+}
+
+@media(max-width:610px){
+    .search-bar{
+        width:450px;  
+        /* border:1px solid black;   */
+    }
+    .search-bar input{
+        
+        width:310px;
+        padding-right:10px
+
+    }
+
+    .contents .recents{
+        grid-template-columns: repeat(3,1fr);
+        width:350px;
+    }
+    .recents .eight,.recents .seven{
+        display:none;
+    }
+    
+
+}
+
+.hide{
+    display:none !important;
+}

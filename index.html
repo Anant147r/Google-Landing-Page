@@ -1,0 +1,377 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="account-section hide">
+        <a href="#"><i class="fab fa-autoprefixer fa-3x"></i></a>
+        <h1>Random</h1>
+        <div id="email">random@random.com</div>
+        <div class="btn">Manage your Google Account</div>
+        <div class="add-account"><i class="fas fa-user-plus"></i><div>Add another account</div></div>
+        <a href="#" class="btn">Sign out</a>
+        <ul>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Terms of Service</a>
+            </li>
+        </ul>
+    </div>
+    <div class="customise">
+        <i class="fas fa-pen"></i><span>Customise</span>
+    </div>
+    <div class="customise-section hide">
+        <div class="contents">
+            <p class="content1">Customise this page</p>
+            <div class="content2">
+                <div class="left">
+                    <ul>
+                        <li id="1">
+                            <a href="#">
+                                <i class="fas fa-images"></i>
+                                Background
+                            </a>
+                        </li>
+                        <li id="2">
+                            <a href="#">
+                                <i class="fas fa-clipboard"></i>
+                                Shortcuts
+                            </a>
+                        </li>
+                        <!-- <li id="3">
+                            <a href="#">
+                                <i class="fas fa-palette"></i>
+                                Colour and Theme
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="contents">
+                        <div class="content1 hide">
+                            <div>
+                                <div class="upload">
+                                    <a href="#">
+                                        <label for="file">
+                                            <i class="fas fa-upload fa-3x" ></i> 
+                                        </label>
+                                    </a>
+                                    <p>Upload from device</p>
+                                    <input type="file" id="file" class="file hide"
+                                    onchange="uploadHandler()">
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <p>No Background</p>
+                            </div>
+                            <div>
+                                <div 
+                                style="background-image: url(img/books.jpg);
+                                        background-size: cover;"></div>
+                                <p>Books</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/camera.jpg);
+                                background-size: cover;"
+                                ></div>
+                                <p>Camera</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/cup.jpg);
+                                background-size: cover;"></div>
+                                <p>Cup</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/floor.jpg);
+                                background-size: cover;"></div>
+                                <p>Floor</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/hand.jpg);
+                                background-size: cover;"></div>
+                                <p>Hand</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/nature.jpg);
+                                background-size: cover;"></div>
+                                <p>Nature</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/pages.jpg);
+                                background-size: cover;"></div>
+                                <p>Pages</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/scene.jpg);
+                                background-size: cover;"></div>
+                                <p>Person</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/sport.jpg);
+                                background-size: cover;"></div>
+                                <p>Sport</p>
+                            </div>
+                            <div>
+                                <div
+                                style="background-image: url(img/window.jpg);
+                                background-size: cover;"></div>
+                                <p>Window</p>
+                            </div>
+                        </div>
+                        <div class="content2">
+                            <div class="part1">
+                                <section class="section1">
+                                    <div></div>
+                                    <h1>My shortcuts</h1>
+                                    <p>Shotcuts are curated by you</p>
+                                </section>
+                                <section class="section2">
+                                    <div></div>
+                                    <h1>Most-visited sites</h1>
+                                    <p>Shotcuts are suggested
+                                        based on websites that you
+                                        visit often    
+                                    </p>
+                                </section>
+                            </div>
+                            <div class="part2">
+                                <div class="contents">
+                                    <a href="#"><i class="fas fa-eye-slash"></i></a>
+                                    <div>
+                                        <h1>Hide shortcuts</h1>
+                                        <p>Don't show shortcuts on this page</p>
+                                    </div>
+                                    <input type="checkbox" id="shortcut" name="shortcut">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content3 hide">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content3">
+                <div></div>
+                <a class="cancel btn" href="#" >Cancel</a>
+                <a class="done btn" href="#" class=>Done</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="empty"></div>
+            <p><a>Gmail</a></p>
+            <p><a>Images</a></p>
+            <a href="#"><i class="fas fa-braille options"></i></a>
+            <a href="#" class="profile">A</a>
+            <div class="more-options hide">
+                <div class="contents-1">
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Account</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fab fa-google fa-3x"></i></a>
+                        <p>Google</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-map fa-3x"></i></a>
+                        <p>Maps</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-youtube fa-3x"></i></a>
+                        <p>Youtube</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Play</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Gmail</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Meet</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Drive</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Calender</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Translate</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Photoes</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Duo</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Shopping</p>
+                    </div>
+                </div>
+                <div class="contents-2">
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Account</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fab fa-google fa-3x"></i></a>
+                        <p>Google</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-map fa-3x"></i></a>
+                        <p>Maps</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-youtube fa-3x"></i></a>
+                        <p>Youtube</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Play</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Gmail</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Meet</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Drive</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Calender</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Translate</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Photoes</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Duo</p>
+                    </div>
+                    <div class="content">
+                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <p>Shopping</p>
+                    </div>
+                </div>
+
+        </nav>
+
+        <div class="contents">
+                <img src="./img/logo2.png" class="logo" alt="">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder=" Search Google or type a URL">
+                    </input>
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="recents">
+                    <div class="one">
+                        <i class=" icons fab fa-github fa-2x"></i>
+                        <p>The world's leading software development platform
+                            . Github
+                        </p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="two">
+                        <i class="icons fab fa-youtube fa-2x"></i>
+                        <p>Youtube</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="three">
+                        <i class="icons fab fa-microsoft fa-2x"></i>
+                        <p>Microsoft</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="four">
+                        <i class="icons fab fa-inbox fa-2x"></i>
+                        <p>Gmail</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="five">
+                        <i class="icons fab fa-autoprefixer fa-2x"></i>
+                        <p>Autoprefixer</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="six">
+                        <i class="icons fab fa-autoprefixer fa-2x"></i>
+                        <p>Autoprefixer</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="seven">
+                        <i class="icons fab fa-facebook fa-2x"></i>
+                        <p>Facebook</p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="eight">
+                        <i class="icons fab fa-github fa-2x"></i>
+                        <p>The world's leading software development platform
+                            . Github
+                        </p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="nine">
+                        <i class="icons fab fa-github fa-2x"></i>
+                        <p>The world's leading software development platform
+                            . Github
+                        </p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="ten">
+                        <i class="icons fas fa-plus fa-2x"></i>
+                        <p>Add Shortcut 
+                        </p>
+                        <i class="hide fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
