@@ -301,9 +301,13 @@ ul{
 .customise-section{
     background-color:white;
     position:absolute;
-    top:50%;
+    top:10vh;
+    left:20vw;
+    right:30vh;
+    /* top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%); */
+    margin:auto;
     z-index:2;
     width:800px;
 }
@@ -315,8 +319,9 @@ ul{
    box-shadow:2px 2px 10px grey
 }
 
-.customise-section> .contents>.content1{
+.customise-section> .contents>  .content1{
     /* border:1px solid black; */
+    
     padding:30px 20px 30px 200px;
 }
 
