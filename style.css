@@ -266,6 +266,7 @@ ul{
 /* Search bar */
 
 .search-bar{
+    position:relative;
     display:block;
     /* border:1px solid black; */
     width:570px;
@@ -292,6 +293,18 @@ ul{
 .search-bar *{
    
     display:inline-block;
+}
+.fa-search{
+    position:absolute;
+    top:10px;
+}
+.fa-microphone{
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+.search-bar>input{
+    padding-left:20px;
 }
 
 
@@ -474,7 +487,8 @@ ul{
 
 @media(max-width:680px){
     .search-bar{
-        width:500px;  
+        /* width:500px;   */
+        width:100%;
         /* border:1px solid black;   */
     }
     .search-bar input{
@@ -500,7 +514,8 @@ ul{
 
 @media(max-width:610px){
     .search-bar{
-        width:450px;  
+        /* width:450px;   */
+        width:100%;
         /* border:1px solid black;   */
     }
     .search-bar input{
