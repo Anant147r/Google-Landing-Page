@@ -276,6 +276,7 @@ margin-top:2em
 .search-bar {
   position: relative;
   display: block;
+  background: white;
   /* border:1px solid black; */
   width: 570px;
   margin: 20px auto;
@@ -290,6 +291,7 @@ margin-top:2em
   width: 440px;
   max-width: 90%;
   margin-right: 60px;
+  margin-left:1em;
   font-size: 17px;
   /* border:1px solid black; */
 }
