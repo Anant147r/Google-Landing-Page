@@ -1,8 +1,8 @@
 {
-  "name": "google",
+  "name": "Google-Landing-Page",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Anant147r/Google-Landing-Page.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/Anant147r/Google-Landing-Page/issues"
   },
