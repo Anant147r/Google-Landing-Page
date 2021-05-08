@@ -632,4 +632,7 @@ margin-top:2em
   .search-bar2{
     display: block;
   }
+  .logo{
+    width:250px;
+  }
 }
