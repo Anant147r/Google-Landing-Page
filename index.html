@@ -1,19 +1,25 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    
+
     <div class="account-section hide">
         <a href="#"><i class="fab fa-autoprefixer fa-3x"></i></a>
         <h1>Random</h1>
         <div id="email">random@random.com</div>
-        <div class="btn">Manage your Google Account</div>
-        <div class="add-account"><i class="fas fa-user-plus"></i><div>Add another account</div></div>
+        <div onclick="openLink(`https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp`)"
+            class="btn pointerOnHover">Manage your Google Account</div>
+        <div class="add-account"><i class="fas fa-user-plus"></i>
+            <div>Add another account</div>
+        </div>
         <a href="#" class="btn">Sign out</a>
         <ul>
             <li>
@@ -60,12 +66,11 @@
                                 <div class="upload">
                                     <a href="#">
                                         <label for="file">
-                                            <i class="fas fa-upload fa-3x" ></i> 
+                                            <i class="fas fa-upload fa-3x"></i>
                                         </label>
                                     </a>
                                     <p>Upload from device</p>
-                                    <input type="file" id="file" class="file hide"
-                                    onchange="uploadHandler()">
+                                    <input type="file" id="file" class="file hide" onchange="uploadHandler()">
                                 </div>
                             </div>
                             <div>
@@ -73,63 +78,52 @@
                                 <p>No Background</p>
                             </div>
                             <div>
-                                <div 
-                                style="background-image: url(img/books.jpg);
+                                <div style="background-image: url(img/books.jpg);
                                         background-size: cover;"></div>
                                 <p>Books</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/camera.jpg);
-                                background-size: cover;"
-                                ></div>
+                                <div style="background-image: url(img/camera.jpg);
+                                background-size: cover;"></div>
                                 <p>Camera</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/cup.jpg);
+                                <div style="background-image: url(img/cup.jpg);
                                 background-size: cover;"></div>
                                 <p>Cup</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/floor.jpg);
+                                <div style="background-image: url(img/floor.jpg);
                                 background-size: cover;"></div>
                                 <p>Floor</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/hand.jpg);
+                                <div style="background-image: url(img/hand.jpg);
                                 background-size: cover;"></div>
                                 <p>Hand</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/nature.jpg);
+                                <div style="background-image: url(img/nature.jpg);
                                 background-size: cover;"></div>
                                 <p>Nature</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/pages.jpg);
+                                <div style="background-image: url(img/pages.jpg);
                                 background-size: cover;"></div>
                                 <p>Pages</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/scene.jpg);
+                                <div style="background-image: url(img/scene.jpg);
                                 background-size: cover;"></div>
                                 <p>Person</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/sport.jpg);
+                                <div style="background-image: url(img/sport.jpg);
                                 background-size: cover;"></div>
                                 <p>Sport</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/window.jpg);
+                                <div style="background-image: url(img/window.jpg);
                                 background-size: cover;"></div>
                                 <p>Window</p>
                             </div>
@@ -146,7 +140,7 @@
                                     <h1>Most-visited sites</h1>
                                     <p>Shotcuts are suggested
                                         based on websites that you
-                                        visit often    
+                                        visit often
                                     </p>
                                 </section>
                             </div>
@@ -169,7 +163,7 @@
             </div>
             <div class="content3">
                 <div></div>
-                <a class="cancel btn" href="#" >Cancel</a>
+                <a class="cancel btn" href="#">Cancel</a>
                 <a class="done btn" href="#" class=>Done</a>
             </div>
         </div>
@@ -179,52 +173,63 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="empty"></div>
-            <p><a>Gmail</a></p>
+            <p><a href="https://gmail.com">Gmail</a></p>
             <p><a href="#" class="customise">Customise</a></p>
             <!-- <a href="#" style="border:1px solid black; padding:10px">Gmail</a> -->
-            <p><a>Images</a></p>
+            <p><a href="https://www.google.co.in/imghp?hl=en&tab=ri&ogbl">Images</a></p>
             <a href="#"><i class="fas fa-braille options"></i></a>
             <a href="#" class="profile">A</a>
             <div class="more-options hide">
                 <div class="contents-1">
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3DOGB%26tab%3Drk%26utm_medium%3Dapp&followup=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3DOGB%26tab%3Drk%26utm_medium%3Dapp&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Account</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fab fa-google fa-3x"></i></a>
+                        <a href="https://www.google.co.in/webhp?tab=rw"><i class="fab fa-google fa-3x"></i></a>
                         <p>Google</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-map fa-3x"></i></a>
+                        <a href="https://www.google.co.in/maps?hl=en"><i class="fas fa-map fa-3x"></i></a>
                         <p>Maps</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-youtube fa-3x"></i></a>
+                        <a href="https://www.youtube.com/?gl=IN"><i class="fas fa-youtube fa-3x"></i></a>
                         <p>Youtube</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://play.google.com/store?hl=en"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Play</p>
                     </div>
+
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/u/0/&ss=1&scc=1&authuser=0&ltmpl=default&ltmplcache=2&emr=1&osid=1#"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Gmail</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://apps.google.com/meet/?hs=197"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Meet</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Den&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Den&hl=en&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Contacts</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2F&followup=https%3A%2F%2Fdrive.google.com%2F&emr=1&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Drive</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&scc=1&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Calender</p>
                     </div>
                     <div class="content">
@@ -236,53 +241,67 @@
                         <p>Photoes</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://duo.google.com/about/?usp=duo_ald"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Duo</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://www.google.co.in/shopping?hl=en&source=og"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Shopping</p>
                     </div>
                 </div>
+
+
+
                 <div class="contents-2">
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=accountsettings&passive=1209600&osid=1&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3DOGB%26tab%3Drk%26utm_medium%3Dapp&followup=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3DOGB%26tab%3Drk%26utm_medium%3Dapp&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Account</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fab fa-google fa-3x"></i></a>
+                        <a href="https://www.google.co.in/webhp?tab=rw"><i class="fab fa-google fa-3x"></i></a>
                         <p>Google</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-map fa-3x"></i></a>
+                        <a href="https://www.google.co.in/maps?hl=en"><i class="fas fa-map fa-3x"></i></a>
                         <p>Maps</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-youtube fa-3x"></i></a>
+                        <a href="https://www.youtube.com/?gl=IN"><i class="fas fa-youtube fa-3x"></i></a>
                         <p>Youtube</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://play.google.com/store?hl=en"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Play</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/u/0/&ss=1&scc=1&authuser=0&ltmpl=default&ltmplcache=2&emr=1&osid=1#"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Gmail</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://apps.google.com/meet/?hs=197"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Meet</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?passive=1209600&continue=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Den&followup=https%3A%2F%2Fcontacts.google.com%2F%3Fhl%3Den&hl=en&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Contacts</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=wise&passive=1209600&continue=https%3A%2F%2Fdrive.google.com%2F&followup=https%3A%2F%2Fdrive.google.com%2F&emr=1&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Drive</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a
+                            href="https://accounts.google.com/ServiceLogin/webreauth?service=cl&passive=1209600&osid=1&continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Frender&scc=1&authuser=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Calender</p>
                     </div>
                     <div class="content">
@@ -290,15 +309,16 @@
                         <p>Translate</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href=""><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Photoes</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://duo.google.com/about/?usp=duo_ald"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Duo</p>
                     </div>
                     <div class="content">
-                        <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
+                        <a href="https://www.google.co.in/shopping?hl=en&source=og"><i
+                                class="fas fa-user-circle fa-3x"></i></a>
                         <p>Shopping</p>
                     </div>
                 </div>
@@ -306,74 +326,98 @@
         </nav>
 
         <div class="contents">
-                <img src="./img/logo2.png" class="logo" alt="">
+            <img src="./img/logo2.png" class="logo" alt="">
+            <form action="https://www.google.com/search" method="GET">
                 <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder=" Search Google or type a URL">
+                    <i class="fas fa-search" style="top:30%;left:3%"></i>
+                    <input type="text" name="q" placeholder=" Search Google or type a URL">
                     </input>
-                    <i class="fas fa-microphone"></i>
+                    <!-- <div class="gcse-search"></div> -->
+
+                    <i style=" top:30%;right:5%" class="fas fa-microphone"></i>
+
                 </div>
-                <div class="recents">
-                    <div class="one">
-                        <i class=" icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
+                <div class="search-bar2">
+                    <i class="fas fa-search" style="top:30%;left:3%"></i>
+                    <input type="text" name="q" placeholder=" Search Google">
+                    </input>
+                    <!-- <div class="gcse-search"></div> -->
+
+                    <i style=" top:30%;right:5%" class="fas fa-microphone"></i>
+
+                </div>
+                <!-- <div>
+                    <div class="centerTheButtons">
+                        <button type="submit" value="Google Search" style="width:10em;margin-right:15px">Google
+                            Search</button>
+                        <button style="width:12em;">I'm Feeling Lucky
+                        </button>
                     </div>
-                    <div class="two">
-                        <i class="icons fab fa-youtube fa-2x"></i>
-                        <p>Youtube</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="three">
-                        <i class="icons fab fa-microsoft fa-2x"></i>
-                        <p>Microsoft</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="four">
-                        <i class="icons fab fa-inbox fa-2x"></i>
-                        <p>Gmail</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="five">
-                        <i class="icons fab fa-autoprefixer fa-2x"></i>
-                        <p>Autoprefixer</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="six">
-                        <i class="icons fab fa-autoprefixer fa-2x"></i>
-                        <p>Autoprefixer</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="seven">
-                        <i class="icons fab fa-facebook fa-2x"></i>
-                        <p>Facebook</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="eight">
-                        <i class="icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="nine">
-                        <i class="icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="ten">
-                        <i class="icons fas fa-plus fa-2x"></i>
-                        <p>Add Shortcut 
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
+                </div> -->
+
+            </form>
+            <div class="recents">
+                <div class="one" onclick="openLink(`https://github.com`)">
+                    <i class=" icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="two" onclick="openLink(`https://youtube.com`)">
+                    <i class="icons fab fa-youtube fa-2x"></i>
+                    <p>Youtube</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="three" onclick="openLink(`https://microsoft.com`)">
+                    <i class="icons fab fa-microsoft fa-2x"></i>
+                    <p>Microsoft</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="four" onclick="openLink(`https://gmail.com`)">
+                    <i class="icons fab fa-inbox fa-2x"></i>
+                    <p>Gmail</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="five">
+                    <i class="icons fab fa-autoprefixer fa-2x"></i>
+                    <p>Autoprefixer</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="six">
+                    <i class="icons fab fa-autoprefixer fa-2x"></i>
+                    <p>Autoprefixer</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="seven" onclick="openLink(`https://facebook.com`)">
+                    <i class="icons fab fa-facebook fa-2x"></i>
+                    <p>Facebook</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="eight" onclick="openLink(`https://github.com`)">
+                    <i class="icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="nine" onclick="openLink(`https://github.com`)">
+                    <i class="icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="ten">
+                    <i class="icons fas fa-plus fa-2x"></i>
+                    <p>Add Shortcut
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
                 </div>
             </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -109,7 +109,9 @@ background.forEach(element=>{
     element.addEventListener("click",()=>{
         var url=element.firstElementChild.style.backgroundImage;
         body.style.backgroundImage=url;
-        body.style.background="contain";
+        body.style.backgroundSize="cover";
+        body.style.backgroundPosition="0% 0%";
+        body.style.backgroundRepeat="no-repeat"
     })
 })
 
@@ -153,3 +155,17 @@ document.addEventListener("click",(event)=>{
         accountSection.classList.add("hide");
     }
 }})
+
+
+
+// Handeling shortcuts on clicking
+const openLink=(linkToOpen)=>{
+   
+    window.open(linkToOpen);
+}
+
+// Change Cursor On Hover
+const cursorOnHover=()=>{
+    // ele.style.cursor="pointer"
+    console.log()
+}
