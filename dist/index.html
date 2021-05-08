@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,14 +7,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
     <div class="account-section hide">
         <a href="#"><i class="fab fa-autoprefixer fa-3x"></i></a>
         <h1>Random</h1>
         <div id="email">random@random.com</div>
         <div class="btn">Manage your Google Account</div>
-        <div class="add-account"><i class="fas fa-user-plus"></i><div>Add another account</div></div>
+        <div class="add-account"><i class="fas fa-user-plus"></i>
+            <div>Add another account</div>
+        </div>
         <a href="#" class="btn">Sign out</a>
         <ul>
             <li>
@@ -60,12 +64,11 @@
                                 <div class="upload">
                                     <a href="#">
                                         <label for="file">
-                                            <i class="fas fa-upload fa-3x" ></i> 
+                                            <i class="fas fa-upload fa-3x"></i>
                                         </label>
                                     </a>
                                     <p>Upload from device</p>
-                                    <input type="file" id="file" class="file hide"
-                                    onchange="uploadHandler()">
+                                    <input type="file" id="file" class="file hide" onchange="uploadHandler()">
                                 </div>
                             </div>
                             <div>
@@ -73,63 +76,52 @@
                                 <p>No Background</p>
                             </div>
                             <div>
-                                <div 
-                                style="background-image: url(img/books.jpg);
+                                <div style="background-image: url(img/books.jpg);
                                         background-size: cover;"></div>
                                 <p>Books</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/camera.jpg);
-                                background-size: cover;"
-                                ></div>
+                                <div style="background-image: url(img/camera.jpg);
+                                background-size: cover;"></div>
                                 <p>Camera</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/cup.jpg);
+                                <div style="background-image: url(img/cup.jpg);
                                 background-size: cover;"></div>
                                 <p>Cup</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/floor.jpg);
+                                <div style="background-image: url(img/floor.jpg);
                                 background-size: cover;"></div>
                                 <p>Floor</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/hand.jpg);
+                                <div style="background-image: url(img/hand.jpg);
                                 background-size: cover;"></div>
                                 <p>Hand</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/nature.jpg);
+                                <div style="background-image: url(img/nature.jpg);
                                 background-size: cover;"></div>
                                 <p>Nature</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/pages.jpg);
+                                <div style="background-image: url(img/pages.jpg);
                                 background-size: cover;"></div>
                                 <p>Pages</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/scene.jpg);
+                                <div style="background-image: url(img/scene.jpg);
                                 background-size: cover;"></div>
                                 <p>Person</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/sport.jpg);
+                                <div style="background-image: url(img/sport.jpg);
                                 background-size: cover;"></div>
                                 <p>Sport</p>
                             </div>
                             <div>
-                                <div
-                                style="background-image: url(img/window.jpg);
+                                <div style="background-image: url(img/window.jpg);
                                 background-size: cover;"></div>
                                 <p>Window</p>
                             </div>
@@ -146,7 +138,7 @@
                                     <h1>Most-visited sites</h1>
                                     <p>Shotcuts are suggested
                                         based on websites that you
-                                        visit often    
+                                        visit often
                                     </p>
                                 </section>
                             </div>
@@ -169,7 +161,7 @@
             </div>
             <div class="content3">
                 <div></div>
-                <a class="cancel btn" href="#" >Cancel</a>
+                <a class="cancel btn" href="#">Cancel</a>
                 <a class="done btn" href="#" class=>Done</a>
             </div>
         </div>
@@ -207,6 +199,7 @@
                         <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Play</p>
                     </div>
+
                     <div class="content">
                         <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
                         <p>Gmail</p>
@@ -244,6 +237,9 @@
                         <p>Shopping</p>
                     </div>
                 </div>
+
+
+
                 <div class="contents-2">
                     <div class="content">
                         <a href="#"><i class="fas fa-user-circle fa-3x"></i></a>
@@ -306,74 +302,89 @@
         </nav>
 
         <div class="contents">
-                <img src="./img/logo2.png" class="logo" alt="">
+            <img src="./img/logo2.png" class="logo" alt="">
+            <form action="https://www.google.com/search" method="GET">
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder=" Search Google or type a URL">
+                    <input type="text" name="q" placeholder=" Search Google or type a URL">
                     </input>
+                    <!-- <div class="gcse-search"></div> -->
+
                     <i class="fas fa-microphone"></i>
+
                 </div>
-                <div class="recents">
-                    <div class="one">
-                        <i class=" icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
+                <div>
+                    <div class="centerTheButtons">
+                        <button type="submit" value="Google Search" style="width:10em;margin-right:15px">Google
+                            Search</button>
+                        <button style="width:12em;">I'm Feeling Lucky
+                        </button>
                     </div>
-                    <div class="two">
-                        <i class="icons fab fa-youtube fa-2x"></i>
-                        <p>Youtube</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="three">
-                        <i class="icons fab fa-microsoft fa-2x"></i>
-                        <p>Microsoft</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="four">
-                        <i class="icons fab fa-inbox fa-2x"></i>
-                        <p>Gmail</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="five">
-                        <i class="icons fab fa-autoprefixer fa-2x"></i>
-                        <p>Autoprefixer</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="six">
-                        <i class="icons fab fa-autoprefixer fa-2x"></i>
-                        <p>Autoprefixer</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="seven">
-                        <i class="icons fab fa-facebook fa-2x"></i>
-                        <p>Facebook</p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="eight">
-                        <i class="icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="nine">
-                        <i class="icons fab fa-github fa-2x"></i>
-                        <p>The world's leading software development platform
-                            . Github
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
-                    <div class="ten">
-                        <i class="icons fas fa-plus fa-2x"></i>
-                        <p>Add Shortcut 
-                        </p>
-                        <i class="hide fas fa-ellipsis-v"></i>
-                    </div>
+                </div>
+
+            </form>
+            <div class="recents">
+                <div class="one">
+                    <i class=" icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="two">
+                    <i class="icons fab fa-youtube fa-2x"></i>
+                    <p>Youtube</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="three">
+                    <i class="icons fab fa-microsoft fa-2x"></i>
+                    <p>Microsoft</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="four">
+                    <i class="icons fab fa-inbox fa-2x"></i>
+                    <p>Gmail</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="five">
+                    <i class="icons fab fa-autoprefixer fa-2x"></i>
+                    <p>Autoprefixer</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="six">
+                    <i class="icons fab fa-autoprefixer fa-2x"></i>
+                    <p>Autoprefixer</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="seven">
+                    <i class="icons fab fa-facebook fa-2x"></i>
+                    <p>Facebook</p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="eight">
+                    <i class="icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="nine">
+                    <i class="icons fab fa-github fa-2x"></i>
+                    <p>The world's leading software development platform
+                        . Github
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
+                </div>
+                <div class="ten">
+                    <i class="icons fas fa-plus fa-2x"></i>
+                    <p>Add Shortcut
+                    </p>
+                    <i class="hide fas fa-ellipsis-v"></i>
                 </div>
             </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
