@@ -273,7 +273,9 @@ margin-top:2em
 
 /* Search bar */
 
-.search-bar {
+
+
+.search-bar,.search-bar2 {
   position: relative;
   display: block;
   background: white;
@@ -284,7 +286,22 @@ margin-top:2em
   border-radius: 50px;
   box-shadow: 1px 1px 20px -11px;
 }
-.search-bar input {
+.search-bar2{
+  display: none;
+}
+
+/* .search-bar {
+  position: relative;
+  display: block;
+  background: white;
+   width: 570px;
+  margin: 20px auto;
+  padding: 0 10px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 20px -11px;
+} */
+
+.search-bar input,.search-bar2 input {
   display: inline-block;
   border-style: none;
   padding: 10px 100px 10px 10px;
@@ -296,11 +313,11 @@ margin-top:2em
   /* border:1px solid black; */
 }
 
-.search-bar > input:focus {
+.search-bar > input:focus,.search-bar2 > input:focus {
   outline: none;
 }
 
-.search-bar * {
+.search-bar *,.search-bar2 * {
   display: inline-block;
 }
 .fa-search {
@@ -312,7 +329,7 @@ margin-top:2em
   right: 10px;
   top: 10px;
 }
-.search-bar > input {
+.search-bar > input,.search-bar2 > input {
   padding-left: 20px;
 }
 
@@ -551,12 +568,12 @@ margin-top:2em
 /* Media Queries */
 
 @media (max-width: 680px) {
-  .search-bar {
+  .search-bar,.search-bar2 {
     /* width:500px;   */
     width: 70%;
     /* border:1px solid black;   */
   }
-  .search-bar input {
+  .search-bar input,.search-bar2 input {
     /* border:1px solid black; */
     width: 380px;
     padding-right: 50px;
@@ -577,12 +594,12 @@ margin-top:2em
 }
 
 @media (max-width: 610px) {
-  .search-bar {
+  .search-bar,.search-bar2 {
     /* width:450px;   */
     width: 70%;
     /* border:1px solid black;   */
   }
-  .search-bar input {
+  .search-bar input,.search-bar2 input {
     width: 310px;
     padding-right: 10px;
   }
@@ -606,4 +623,13 @@ margin-top:2em
 /* Turn cursor to pointer on hover */
 .pointerOnHover:hover{
   cursor: pointer;
+}
+
+@media(max-width:575px){
+  .search-bar{
+    display: none;
+  }
+  .search-bar2{
+    display: block;
+  }
 }
