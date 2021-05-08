@@ -169,3 +169,15 @@ const cursorOnHover=()=>{
     // ele.style.cursor="pointer"
     console.log()
 }
+
+
+//Performing submit action of form on pressing enter in the input text field
+document.querySelector(".search-bar").addEventListener("keypress",(e)=>{
+    if(e.key==='Enter')
+    document.forms["form1"].submit();
+})
+
+document.querySelector(".search-bar2").addEventListener("keypress",(e)=>{
+    if(e.key==='Enter')
+    document.forms["form1"].submit();
+})
