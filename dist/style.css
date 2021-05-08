@@ -600,3 +600,10 @@ margin-top:2em
 .hide {
   display: none !important;
 }
+ 
+
+
+/* Turn cursor to pointer on hover */
+.pointerOnHover:hover{
+  cursor: pointer;
+}

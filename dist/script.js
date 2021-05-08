@@ -163,3 +163,9 @@ const openLink=(linkToOpen)=>{
    
     window.open(linkToOpen);
 }
+
+// Change Cursor On Hover
+const cursorOnHover=()=>{
+    // ele.style.cursor="pointer"
+    console.log()
+}
